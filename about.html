@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobias - 简历</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="shortcut icon" href="./assets/public/favicon.svg"/>
+</head>
+<body>
+    <canvas class="fireworks"></canvas>
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo"><img src="./assets/public/logo_text.svg"></a>
+            <div class="menu">
+                <li class="magical btn" onclick="window.location.href='./index.html'">主页</li>
+                <li class="magical btn" onclick="window.location.href='./work.html'">项目</li>
+                <li class="magical btn" onclick="window.location.href='./blog.html'">知识库</li>
+                <li class="magical btn nav" onclick="window.location.href='./about.html'">简历</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <li class="magical btn" onclick="window.location.href='./index.html'">主页</li>
+                    <li class="magical btn" onclick="window.location.href='./work.html'">项目</li>
+                    <li class="magical btn" onclick="window.location.href='./blog.html'">知识库</li>
+                    <li class="magical btn nav" onclick="window.location.href='./about.html'">简历</li>
+                </div>
+            </div>
+        </div>
+        <blockquote><img src="./assets/public/logo.svg"></blockquote>
+    </div>
+    <div class="about">
+        <div class="about-top">
+            <div class="about-name">袁帅</div>
+            <div class="about-info">
+                <div class="about-info-left">
+                    <div class="about-info-title">专业概述</div>
+                    <div class="introduce-desc">
+                        一名热衷于探索设计系统、无障碍设计与设计工程化的UI/UX设计师。拥有在AI产品中从0到1构建设计规范、推进Design Tokens落地、独立负责核心功能设计的实战经验。善于以结构化思维驱动设计，并在设计与开发之间建立高效沟通。<br><br>设计方法: 结构化设计思维、设计系统、数据驱动、用户体验设计、无障碍设计<br>设计工具: Figma, Sketch, Adobe Creative Suite (Ps, Ai, Ae)
+                        <br>原型与交付: Prototyping, Design Tokens, 动效设计与代码化交付<br>
+                        技术认知: 了解 Ant Design / T-Design, 了解 VUE / React 前端框架
+                    </div>
+                </div>
+                <div class="about-info-right">
+                    <div class="contact">
+                        <div class="about-info-title">联系我</div>
+                        <div class="contact-desc">
+                            <div class="list">
+                                <div class="list-label">Email：</div>
+                                <div href="javascript:" class="list-value" id="email" tabindex="0" role="button"  title="点击复制邮箱">
+                                    <a id="emailCopied">1665002128@qq.com</a>
+                                </div>
+                                <span class="list-value copied">copied&nbsp;✓</span>
+                            </div>
+                            <div class="list">
+                                <div class="list-label">微信：</div>
+                                <div class="list-value">
+                                    <a class="tooltip">TobiasSchmidt_
+                                        <div class="tooltip-box">
+                                            <img src="./assets/about/wechat.jpg">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume">
+                        <div class="about-info-title resume-title">简历</div>
+                        <div class="resume-desc">
+                            <div class="resume-desc-helptext">点击下载我的简历(PDF & 1MB)</div>
+                            <div class="magical resume-btn"><a href="/assets/resume.pdf" download="Tobias_Resume.pdf" target="_blank">下载</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-middle">
+            <div class="power">
+                <div class="list-00">
+                    <div class="magical power-card-number">
+                        <a>
+                            <div class="card-title">1</div>
+                            <div class="card-text">工作经历</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card-number">
+                        <a>
+                            <div class="card-title">4</div>
+                            <div class="card-text">项目</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card-number">
+                        <a>
+                            <div class="card-title">20⁺</div>
+                            <div class="card-text">知识库文章</div>
+                        </a>
+                    </div>
+                    <!-- <div class="magical power-card-number">
+                        <a>
+                            <div class="card-title">3</div>
+                            <div class="card-text">Patent</div>
+                        </a>
+                    </div> -->
+                </div>
+                <div class="list-01">
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/abstract.svg')"></div>
+                            <div class="card-text">我的技能</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/menu.svg')"></div>
+                            <div class="card-text">我的技能</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/code.svg')"></div>
+                            <div class="card-text">我的技能</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/pin.svg')"></div>
+                            <div class="card-text">我的技能</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/pen.svg')"></div>
+                            <div class="card-text">我的技能</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-bottom">
+            <div class="experience">
+                <div class="item">
+                    <div class="time">❖ 2025.04 ~ 07</div>
+                    <div class="name">
+                        <div class="company"><a href="" target="_blank">上海韩创网络科技有限公司 ↗</a></div>
+                        <div class="job">UI/UX 设计师 </div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item">
+                            <!-- <div class="title">听脑AI/话袋AI</div> -->
+                            <div class="desc">
+                                <ul>
+                                    <li>参与AI产品的设计系统建设与体验优化，从中掌握了Design Tokens落地、数据驱动设计、跨团队协作等实战方法。通过两个项目的迭代实践，完成从界面执行到体系化设计思维的转变，成长为能以结构化思维推进落地的UX/UI设计师。<br><br>需求挖掘与文档输出：深度调研公职人员、央国企职工、内容创作者等核心用户群体需求，梳理 “会议纪要效率低”“转写后整理繁琐” 等场景痛点，输出“产品需求文档”</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="time">❖ 2025.04 ~ 2025.07</div>
+                    <div class="name">
+                        <div class="company"><a href="https://itingnao.com/" target="_blank">听脑AI ↗</a></div>
+                        <div class="job">UI/UX 设计师</div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item">
+                            <div class="title">听脑AI</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>负责针对新用户流失问题的体验重设计。通过用户路径分析与关键行为追踪，发现核心功能发现率低是主要痛点。据此重构引导与主界面布局，将用户首次使用的转化率提升约30%，显著降低了初期流失率。</li>
+                                    <!-- <li>This is a project description that can introduce one's project achievements, project experience, and achievements;</li>
+                                    <li>This is a project description that can introduce one's project achievements, project experience, and achievements.</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="item">
+                            <div class="title">Project Title Two</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>This is a project description that can introduce one's project achievements, project experience, and achievements;</li>
+                                    <li>This is a project description that can introduce one's project achievements, project experience, and achievements.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="title">Project Title Three</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>This is a project description that can introduce one's project achievements, project experience, and achievements;</li>
+                                    <li>This is a project description that can introduce one's project achievements, project experience, and achievements.</li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="time">❖ 2025.07 ~ 2025.10</div>
+                    <div class="name">
+                        <div class="company"><a href="https://ihuadai.cn/" target="_blank">话袋AI ↗</a></div>
+                        <div class="job">UI/UX 设计师</div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item">
+                            <div class="title">话袋AI</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>负责项目UI设计全流程交付，推动设计系统与组件库落地;</li>
+                                    <li>主导设计系统建设：制定颜色、字体、间距等规范，协同开发完成 Design Tokens 落地，形成跨端统一组件库，提升协作与交付效率;</li>
+                                    <li>重塑AI助手体验：优化交互逻辑，使助手能基于个人笔记进行智能分析，将其从通用问答工具升级为个性化知识助理，显著提升留存率与粘性;</li>
+                                    <li>优化核心功能界面：独立设计「AI总结链接内容」与「AI录音转写」功能，统一卡片样式与阅读体验，降低用户认知负担;</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <div>© 2025 Design by <a href="./index.html" target="_blank">Tobias</a></div>
+            <!-- <span>|</span>
+            <div class="fillings">
+                <a href="https://asorn.cn/" target="_blank">Asorn</a>
+            </div>
+            <span>|</span>
+            <div class="friends">
+                <a href="https://zdo.fun/" target="_blank">ZDO</a>
+            </div> -->
+        </div>
+    </div>
+    <div class="widget">
+        <div class="shape-light"></div>
+        <div class="shape-star">
+            <div class="rising-stars rising-stars-visible">
+                <div style="height:1px;width:1px"></div>
+                <div style="height:2px;width:2px"></div>
+                <div style="height:1px;width:1px"></div>
+            </div>
+        </div>
+        <div class="shape-earth"></div>
+    </div>
+</body>
+<script src="./js/main.min.js"></script>
+<script src='./js/anime.js'></script>
+<script src='./js/firework.js'></script>
+</html>
